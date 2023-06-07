@@ -1,0 +1,3 @@
+julien@ubuntu:/tmp$ cat lll
+#!/bin/bash
+cd ~
