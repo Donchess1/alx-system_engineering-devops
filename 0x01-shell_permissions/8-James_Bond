@@ -1,3 +1,2 @@
 #!/bin/bash
-ug=
-o=rwx ./hello
+chmod o+rwx ./hello
