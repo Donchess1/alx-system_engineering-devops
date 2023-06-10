@@ -1,2 +1,2 @@
-#!/bin/bash
-cat ("(Ôo)"
+#!bin/bash
+cat '(Ôo)\'
