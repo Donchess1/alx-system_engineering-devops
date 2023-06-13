@@ -1,4 +1,2 @@
 #!/bin/bash
-echo $PATH | awk -F':' '{print (NF +1)}
-
-
+echo $PATH | awk -F':' '{print (NF +1)'
