@@ -1,2 +1,2 @@
-#!/bin/bash
-find PATH -d |  wc -l
+#!/bin/bash
+tr ':' '\n'| ((wc -l) +1)
