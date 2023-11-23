@@ -4,6 +4,6 @@
 x=0
 while [ "$x" -lt 10 ]
 do
-	printf "Best School"
+	printf "Best School\n"
 	((x++))
 done
