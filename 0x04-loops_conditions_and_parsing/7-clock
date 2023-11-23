@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+Hour=0 
+minutes=0
+while [ "$minutes" -le 60 ]
+do
+	if [ "$minutes" -eq  60 ] || [ "$minutes" -eq  0 ]
+        then
+		printf "Hour: %d\n" "$Hour"
+		((Hour++))
+		minutes=0
+	else
+		printf "%d\n" "$minutes"
+	fi
+	((minutes++))
+done
