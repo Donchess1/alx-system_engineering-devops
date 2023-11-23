@@ -1,19 +1,88 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# displays numbers from 1 to 20.
 
-x=1
-while [ "$x" -le 20 ]
+COUNTER=1
+while [ $COUNTER -lt 21 ]
 do
-	printf "%d\n" "$x"
-        if [ "$x" -eq 4 ]
-        then
-                printf "bad luck from China\n"
-        elif [ "$x" -eq 9 ]
-        then
-                printf "bad luck from Japan\n"
-        elif [ "$x" -eq 17 ]
-	then
-                printf "bad luck from Italy\n"
-        fi
-        ((x++))
+    case $COUNTER in
+
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
+    esac
+
+    let COUNTER+=1
+done#!/usr/bin/env bash
+# displays numbers from 1 to 20.
+
+COUNTER=1
+while [ $COUNTER -lt 21 ]
+do
+    case $COUNTER in
+
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
+    esac
+
+    let COUNTER+=1
+done#!/usr/bin/env bash
+# displays numbers from 1 to 20.
+
+COUNTER=1
+while [ $COUNTER -lt 21 ]
+do
+    case $COUNTER in
+
+        4)
+	    echo $COUNTER
+	    echo "bad luck from China"
+	    ;;
+	
+	9)
+	    echo $COUNTER
+	    echo "bad luck from Japan"
+	    ;;
+	
+	17)
+	    echo $COUNTER
+	    echo "bad luck from Italy"
+	    ;;
+
+	*)
+	    echo $COUNTER
+	    ;;
+    esac
+
+    let COUNTER+=1
 done
