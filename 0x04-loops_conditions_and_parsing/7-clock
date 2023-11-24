@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
-#This checks the time
 
+hour=0
+minute=1
 
-Hour=0 
-minutes=0
-while [ "$Hour" -lt 13 ]
+while [ $hour -le 12 ];
 do
-	if [ "$minutes" -eq  60 ] || [ "$minutes" -eq  0 ]
-	then
-		printf "Hour: %d\n" "$Hour"
-		((Hour++))
-		minutes=0
-	else
-		printf "%d\n" "$minutes"
-	fi
-	((minutes++))
+	printf "Hour: %d\n" $hour
+	
+	while [ $minute -le 59 ];
+	do
+		if [ $minute = 60 ]
+		then
+			printf "Hour: %d\n" $hour
+		else
+			printf "%d\n" $minute
+			((minute++))
+		fi
+	done
+	((hour++))
+	minute=1
 done
