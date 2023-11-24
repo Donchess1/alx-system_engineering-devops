@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+#This checks the time
+
+
 Hour=0 
 minutes=0
 while [ "$Hour" -lt 13 ]
