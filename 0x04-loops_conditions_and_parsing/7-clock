@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#time checker
 
 hour=0
 minute=1
