@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
 # Display PID and program name for each socket using ss, awk, and ps
-ss -tulnep | awk '/^(LISTEN|UNCONN)/ {print $1, $6}' |
-	while read line
-	do
-		pid=$(echo $line | awk '{print $1}')
-		socket=$(echo $line | awk '{print $2}')
-		program=$(ps -p $pid -o comm=)
-		echo "PID: $pid, Program: $program, Socket: $socket"
-	done
+
+netstat -l --program
