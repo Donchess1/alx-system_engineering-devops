@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Display PID and program name for each socket using ss, awk, and ps
 
 netstat -l --program
