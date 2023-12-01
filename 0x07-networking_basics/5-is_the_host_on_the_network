@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Check if an IP address is provided as an argument
 
 if [ $# -eq 0 ]
